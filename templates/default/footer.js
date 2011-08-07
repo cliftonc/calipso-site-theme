@@ -2,10 +2,10 @@
  * Additional content section / block functions for body.
  */
 
-var calipso = require("../../../../lib/calipso");
+var calipso = require("lib/calipso");
 
 exports = module.exports = function(req, options, callback) {
-  
+
   /**
    *  Get additional content for blocks in the template
    */
@@ -19,5 +19,5 @@ exports = module.exports = function(req, options, callback) {
       callback(err,{left:left, center:center, right:right});
     }
   );
-  
+
 };

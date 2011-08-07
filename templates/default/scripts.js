@@ -2,7 +2,7 @@
  * Additional content section / block functions for scripts.
  */
 
-var calipso = require("../../../../lib/calipso");
+var calipso = require("lib/calipso");
 
 exports = module.exports = function(req, options, callback) {
 

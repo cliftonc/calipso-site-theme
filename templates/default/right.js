@@ -2,7 +2,7 @@
  * Additional content section / block functions for body.
  */
 
-var calipso = require("../../../../lib/calipso");
+var calipso = require("lib/calipso");
 
 exports = module.exports = function(req, options, callback) {
 
