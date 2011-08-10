@@ -2,7 +2,10 @@
  * Additional content section / block functions for body.
  */
 
-var calipso = require("lib/calipso"), Query = require("mongoose").Query;
+var rootpath = process.cwd() + '/',
+  path = require('path'),
+  calipso = require(path.join(rootpath, 'lib/calipso')),
+  Query = require('mongoose').Query;
 
 exports = module.exports = function(req,options,callback) {
 
@@ -32,4 +35,4 @@ exports = module.exports = function(req,options,callback) {
     }
   );
 
-}
+};
