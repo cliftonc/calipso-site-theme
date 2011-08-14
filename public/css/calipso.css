@@ -110,27 +110,50 @@ div.no-dox-comment{color:#f44}
 .home-column{background:#2a2c2a url("/images/simple_bg.gif") repeat;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;min-height:260px;*height:260px;}
 .home-column ul{margin:0 0 0 20px !important;padding:0 !important;}
 .home-column ul li{margin:0 !important;padding:0 !important}
+.repo-all{background:#2a2c2a url("/images/simple_bg.gif") repeat;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;padding:10px}
+.repo-column{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;min-height:260px;}
+.repo-column ul{margin:0 0 0 20px !important;padding:0 !important;}
+.repo-column ul li{margin:0 !important;padding:0 !important}
 .home-spacer{clear:both;position:relative;top:-12px;background:url("/images/background-border.png") no-repeat;*background:url("/images/background-border-ie6-8bit.png") no-repeat;background-position-x:50%;height:28px;width:100%}
 #messages{clear:both;width:98%}
 #messages ul{width:98%;background:#2a2c2a url("/images/simple_bg.gif") repeat;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;margin:0 0 20px;padding:15px 10px 15px 10px;list-style:none;}
 #messages ul li{margin:0 !important;padding:0 !important}
-form{width:98%;zoom:1;}
-form div.form-fields{margin:0;padding:0;list-style-type:none;width:99%;zoom:1}
+ul.tabs{margin:0;padding:0;float:left;list-style:none;height:32px;width:97%;}
+ul.tabs li{float:left;margin:0;padding:0;height:31px;line-height:31px;border-left:none;margin-bottom:-1px;background:#e0e0e0;overflow:hidden;position:relative;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+ul.tabs li a{text-decoration:none;display:block;font-size:1.2em;padding:0 20px;outline:none;color:#000}
+ul.tabs li a:hover{background:#ccc}
+html ul.tabs li.active,html ul.tabs li.active a:hover,html ul.tabs li.active a{color:#fff !important;background:#2a2c2a url("/images/simple_bg.gif") repeat;border-bottom:1px solid #2a2c2a}
+ul.vertical-tabs{margin:0;padding:0;float:left;list-style:none;height:32px;width:10%;}
+ul.vertical-tabs li{float:left;margin:0;padding:0;height:31px;line-height:31px;border-left:none;margin-bottom:-1px;overflow:hidden;background:#121212;position:relative;width:100%;}
+ul.vertical-tabs li a{text-decoration:none;display:block;font-size:1.2em;padding:0 20px;outline:none;color:#afafaf}
+ul.vertical-tabs li a:hover{background:#232323}
+html ul.vertical-tabs li.active,html ul.vertical-tabs li.active a:hover,html ul.vertical-tabs li.active a{color:#fff !important;background:#2a2c2a url("/images/simple_bg.gif") repeat;border-bottom:1px solid #2a2c2a}
+.vertical-tab-container{float:right;width:90%;background:#2a2c2a url("/images/simple_bg.gif") repeat;min-height:200px;border-top-right-radius:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px;}
+.vertical-tab-container .vertical-tab-content{padding:20px}
+.vertical-tab-container form{width:95%}
+ul.vertical-tabs li:first-child{border-top-left-radius:5px}
+ul.vertical-tabs li:last-child{border-bottom-left-radius:5px}
+.repo-show-left{float:left;width:30%}
+.repo-show-right{float:right;width:65%}
+form{width:100%;zoom:1;}
+form div.form-fields{margin:0;padding:0;list-style-type:none;zoom:1;background:#2a2c2a url("/images/simple_bg.gif") repeat;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;width:95%;padding:20px}
 form div.actions{width:auto !important;position:relative;text-align:right;clear:both;padding:10px 0% 10px 0%;}
-form div.actions input{font-size:100%;margin-right:5px;padding:5px}
-form div.form-field{margin:0;padding:5px 0 3px;clear:both;background-color:transparent;position:relative;}
-form div.form-field label{padding-right:10px}
-form div.form-field div{margin:0;padding:0;color:#fff;}
-form div.form-field div label{margin:0;padding-top:3px;clear:both;font-size:85%;line-height:160%;color:#fff;display:block}
+form div.actions input{font-size:100%;margin-right:10px;padding:5px}
+div.form-field{margin:0;padding:5px;clear:both;background-color:transparent;}
+div.form-field label{padding-bottom:5px;width:100%;font-weight:bolder;display:block}
+div.form-field div{margin:0;padding:0;color:#fff;}
+div.form-field div label{margin:0;padding-top:3px;clear:both;line-height:160%;color:#fff;display:relative}
+.markItUp{width:100% !important;}
+.markItUp textarea{padding:2px 0 !important}
 #user-login div.form-item div{margin-bottom:5px !important}
 #user-login div.form-item{margin-bottom:5px !important}
-input.text,input.file,textarea.textarea,select.select{font-size:100%;color:#333;margin:0;padding:2px 0}
-input.text,textarea.textarea,textarea.json{border-top:1px solid #7c7c7c;border-left:1px solid #c3c3c3;border-right:1px solid #c3c3c3;border-bottom:1px solid #ddd;width:100%}
+input.text,input.file,textarea.textarea,select.select{font-size:100%;color:#333;margin:0;padding:4px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
+input.text,textarea.textarea,textarea.json{border-top:1px solid #7c7c7c;border-left:1px solid #c3c3c3;border-right:1px solid #c3c3c3;border-bottom:1px solid #ddd;width:100%;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
 input.crontime{width:45px !important;text-align:center;padding-right:3px}
 input.date,input.time{width:50px}
-select.select{padding:1px 0 0}
+select.select{padding:1px 0 0;background-color:#fff}
 input.checkbox,input.radio{display:inline-block;margin:4px 0 0;padding:0;width:13px;height:13px}
-form .description{font-size:.7em;color:9 f9f9f}
+form .description{font-size:.8em;color:9 f9f9f;padding-left:5px;margin-bottom:5px}
 form div.section h3{clear:both;font-weight:normal;font-size:110%;line-height:135%;margin:0 0 3px;width:auto;padding:12px 1% 0 0;border-top:1px dotted #ccc}
 .search{background:#2a2c2a url("/images/simple_bg.gif") repeat;padding:10px;padding-top:5px !important;padding-right:5px !important;width:250px;float:right;display:inline;margin-top:-60px;}
 .search input.text{width:170px !important;padding:5px !important}

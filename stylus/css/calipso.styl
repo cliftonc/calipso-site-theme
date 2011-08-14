@@ -579,6 +579,21 @@ div.no-dox-comment
       margin  0 !important
       padding  0 !important
 
+.repo-all
+  background-highlight()
+  border-radius  5px
+  padding 10px
+
+.repo-column
+  border-radius  4px
+  min-height  260px
+  ul
+    margin  0 0 0 20px !important
+    padding  0 !important
+    li
+      margin  0 !important
+      padding  0 !important
+
 .home-spacer
   clear  both
   position  relative
@@ -606,16 +621,115 @@ div.no-dox-comment
       margin  0 !important
       padding  0 !important
 
+ul.tabs
+  margin 0
+  padding 0
+  float left
+  list-style none
+  height 32px
+  width 97%
+  li
+    float left
+    margin 0
+    padding 0
+    height 31px
+    line-height 31px
+    border-left none
+    margin-bottom -1px
+    background #e0e0e0
+    overflow hidden
+    position relative
+    border-radius 5px
+    a
+      text-decoration none
+      display block
+      font-size 1.2em
+      padding 0 20px
+      outline none
+      color #000
+    a:hover
+      background: #ccc
+
+
+html ul.tabs li.active, html ul.tabs li.active a:hover, html ul.tabs li.active a
+  color #fff !important
+  background-highlight()
+  border-bottom 1px solid #2A2C2A
+
+ul.vertical-tabs
+  margin 0
+  padding 0
+  float left
+  list-style none
+  height 32px
+  width 10%
+  li
+    float left
+    margin 0
+    padding 0
+    height 31px
+    line-height 31px
+    border-left none
+    margin-bottom -1px
+    overflow hidden
+    background #121212
+    position relative
+    width 100%
+    a
+      text-decoration none
+      display block
+      font-size 1.2em
+      padding 0 20px
+      outline none
+      color #afafaf
+    a:hover
+      background: #232323
+
+html ul.vertical-tabs li.active, html ul.vertical-tabs li.active a:hover, html ul.vertical-tabs li.active a
+  color #fff !important
+  background-highlight()
+  border-bottom 1px solid #2A2C2A
+
+.vertical-tab-container
+  float right
+  width 90%
+  background-highlight()
+  min-height 200px
+  border-top-right-radius 5px
+  border-bottom-right-radius 5px
+  border-bottom-left-radius 5px
+  .vertical-tab-content
+    padding 20px
+  form
+    width 95%
+
+ul.vertical-tabs
+  li:first-child
+    border-top-left-radius 5px
+  li:last-child
+    border-bottom-left-radius 5px
+
+.repo-show-left
+  float left
+  width 30%
+
+.repo-show-right
+  float right
+  width 65%
+
 /** FORMS **/
 form
-  width  98%
+  width  100%
   zoom  1
   div.form-fields
     margin  0
     padding  0
     list-style-type  none
-    width  99%
     zoom  1
+    background-highlight()
+    border-radius 5px
+    width 95%
+    padding 20px
   div.actions
     width  auto !important
     position  relative
@@ -624,28 +738,35 @@ form
     padding  10px 0% 10px 0%
     input
       font-size  100%
-      margin-right  5px
+      margin-right  10px
       padding  5px
-  div.form-field
+
+div.form-field
+  margin  0
+  padding  5px
+  clear  both
+  background-color  transparent
+  label
+    padding-bottom 5px
+    width 100%
+    font-weight bolder
+    display block
+  div
     margin  0
-    padding  5px 0 3px
-    clear  both
-    background-color  transparent
-    position  relative
+    padding  0
+    color  white
     label
-      padding-right 10px
-    div
       margin  0
-      padding  0
+      padding-top  3px
+      clear  both
+      line-height  160%
       color  white
-      label
-        margin  0
-        padding-top  3px
-        clear  both
-        font-size  85%
-        line-height  160%
-        color  white
-        display  block
+      display  relative
+
+.markItUp
+  width 100% !important
+  textarea
+    padding 2px 0px !important
 
 #user-login div.form-item div
   margin-bottom  5px !important
@@ -653,12 +774,12 @@ form
 #user-login div.form-item
   margin-bottom  5px !important
 
-
 input.text, input.file, textarea.textarea, select.select
   font-size  100%
   color  #333
   margin  0
-  padding  2px 0
+  padding  4px
+  border-radius 3px
 
 input.text, textarea.textarea, textarea.json
   border-top  1px solid #7c7c7c
@@ -666,6 +787,7 @@ input.text, textarea.textarea, textarea.json
   border-right  1px solid #c3c3c3
   border-bottom  1px solid #ddd
   width  100%
+  border-radius 3px
 
 input.crontime
   width  45px !important
@@ -677,6 +799,7 @@ input.date, input.time
 
 select.select
   padding  1px 0 0
+  background-color white
 
 input.checkbox, input.radio
   display  inline-block
@@ -686,8 +809,10 @@ input.checkbox, input.radio
   height  13px
 
 form .description
-  font-size  .7em
+  font-size  .8em
   color  9f9f9f
+  padding-left  5px
+  margin-bottom 5px
 
 form div.section h3
   clear  both
@@ -698,7 +823,6 @@ form div.section h3
   width  auto
   padding  12px 1% 0 0
   border-top  1px dotted #CCC
-
 
 .search
   background-highlight()
