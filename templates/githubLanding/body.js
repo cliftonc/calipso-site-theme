@@ -5,7 +5,7 @@
 var rootpath = process.cwd() + '/',
   path = require('path'),
   calipso = require(path.join(rootpath, 'lib/calipso')),
-  Query = require('mongoose').Query;
+  Query = calipso.lib.mongoose.Query;
 
 exports = module.exports = function(req, options, callback) {
 
@@ -23,14 +23,16 @@ exports = module.exports = function(req, options, callback) {
     var query = new Query({
       'contentType': 'Github Feed'
     });
-    
-    options.getContentList(query, {
+
+    options.getContentList({contentType: 'Github Feed'}, {
       req: req,
-      sortBy: 'published,desc',      
-      limit: 30      
+      sortBy: 'published,desc',
+      limit: 30
     }, this.parallel());
 
   }, function done(err, header, output) {
+
+    console.dir(output);
 
     callback(err,{
       header: header,
