@@ -2,7 +2,7 @@
   "name": "calipso",
   "type": "full",
   "description": "Theme used on Calip.so",
-  "version": "0.1.1",
+  "version": "0.2.4",
   "author": "Clifton Cunningham <clifton.cunningham@gmail.com> (cliftoncunningham.co.uk)",
   "layouts": {
     "default": {
@@ -31,6 +31,7 @@
     },
     "home": {
       "layout": {
+        "template": "default.html",
         "copyFrom":"default",
         "sections": {
           "body": {"template": "body.html","cache":true,"varyParams":false}
@@ -39,6 +40,7 @@
     },
     "guideLanding": {
       "layout": {
+        "template": "default.html",
         "copyFrom":"default",
         "sections": {
           "body": {"template": "body.html","cache":true,"varyParams":true}
@@ -47,6 +49,7 @@
     },
     "blogLanding": {
       "layout": {
+        "template": "default.html",
         "copyFrom":"default",
         "sections": {
           "body": {"template": "body.html","cache":true,"varyParams":true}
@@ -55,6 +58,7 @@
     },
     "tagLanding": {
       "layout": {
+        "template": "default.html",
         "copyFrom":"default",
         "sections": {
           "body": {"template": "body.html","cache":true,"varyParams":true}
@@ -63,6 +67,7 @@
     },
     "githubLanding": {
       "layout": {
+        "template": "default.html",
         "copyFrom":"default",
         "sections": {
           "body": {"template": "body.html","cache":true,"varyParams":true}
@@ -71,6 +76,7 @@
     },
     "quickstartLanding": {
       "layout": {
+        "template": "default.html",
         "copyFrom":"default",
         "sections": {
           "body": {"template": "body.html","cache":true,"varyParams":true}
@@ -78,12 +84,9 @@
       }
     },
     "preview": {
-      "layout": {
+      "layout": {        
         "template": "preview.html",
-        "sections": {
-          "scripts": {"template": "scripts.html"},
-          "body": {"template": "body.html"}
-        }
+        "copyFrom":"default"
       }
     }
   }
