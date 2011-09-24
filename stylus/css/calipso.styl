@@ -736,6 +736,7 @@ form
     text-align  right
     clear  both
     padding  10px 0% 10px 0%
+    margin-bottom 0px !important
     input
       font-size  100%
       margin-right  10px
@@ -774,20 +775,26 @@ div.form-field
 #user-login div.form-item
   margin-bottom  5px !important
 
-input.text, input.file, textarea.textarea, select.select
+#user-login input.text, #user-login input.password
+  width 95% !important
+
+input.text, input.file, input.password, textarea.textarea, select.select
   font-size  100%
   color  #333
   margin  0
   padding  4px
   border-radius 3px
 
-input.text, textarea.textarea, textarea.json
+input.text, input.file, input.password
+  width 75%  
+
+textarea.textarea, textarea.json
   border-top  1px solid #7c7c7c
   border-left  1px solid #c3c3c3
   border-right  1px solid #c3c3c3
   border-bottom  1px solid #ddd
-  width  100%
   border-radius 3px
+  width 100%
 
 input.crontime
   width  45px !important
@@ -799,7 +806,7 @@ input.date, input.time
 
 select.select
   padding  1px 0 0
-  background-color white
+  background-color #DFEFEF
 
 input.checkbox, input.radio
   display  inline-block
@@ -807,6 +814,57 @@ input.checkbox, input.radio
   padding  0
   width  13px
   height  13px
+
+.description
+  padding:2px 0 5px 160px;
+  font-size:11px;
+  color: #EFEFEF;
+  max-width:400px;
+
+.button, button
+  display: inline-block;
+  margin:0 20px 0 0;
+  padding:8px 16px;
+  font-size:14px;
+  font-weight:bold;
+  color: #000 !important;
+  background: -moz-linear-gradient( top, #ededed 0%, #a1a1a1 );
+  background: -webkit-gradient( linear, left top, left bottom, from(#ededed), to(#a1a1a1) );
+  border: 1px solid #333; /* 333 instead of black because chrome renders the corners better that way */
+  box-shadow: 0 1px 4px rgba(150, 150, 150, 0.5);
+  border-radius: 7px;
+  text-shadow: 0 1px 0 #fff;
+  text-decoration: none;
+
+.button:hover, button:hover
+  border-color: #007dff 
+  box-shadow: 0 0 8px rgba(0, 125, 160, 0.8)
+
+a.submit, input[type="submit"]
+  display: inline-block
+  margin:0 20px 0 0
+  padding:8px 16px
+  font-size:14px
+  font-weight:bold
+  color: #000 !important
+  background: -moz-linear-gradient( top, #ededed 0%, #a1a1a1 )
+  background: -webkit-gradient( linear, left top, left bottom, from(#ededed), to(#a1a1a1) )
+  background: -webkit-gradient( linear, left top, left bottom, from(#4d90fe), to(#4787ed) )
+  background: -webkit-gradient( linear, left top, left bottom, from(#4dc0fe), to(#47a7ed) )
+  border: 1px solid #333 /* 333 instead of black because chrome renders the corners better that way */
+  box-shadow: 0 1px 4px rgba(150, 150, 150, 0.5)
+  border-radius: 7px
+  text-shadow: 0 1px 0 #fff
+  text-decoration: none
+
+a.submit:hover, input[type="submit"]:hover
+  border-color: #007dff
+  box-shadow 0 0 8px rgba(0, 125, 160, 0.8)
+
+input.labelFirst
+  margin-left auto
+
+
 
 form .description
   font-size  .8em
@@ -839,7 +897,7 @@ form div.section h3
   .actions
     display inline
     border none
-    margin 0px
+    margin 0px    
     padding 0px
     float right
     input
