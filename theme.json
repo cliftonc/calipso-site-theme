@@ -1,93 +1,141 @@
 {
-  "name": "calipso",
-  "type": "full",
-  "description": "Theme used on Calip.so",
-  "version": "0.2.4",
-  "author": "Clifton Cunningham <clifton.cunningham@gmail.com> (cliftoncunningham.co.uk)",
-  "layouts": {
-    "default": {
-      "layout": {
-        "template": "default.html",
-        "sections": {
-          "styles": {"template": "styles.html","cache":true,"varyParams":false},
-          "scripts": {"template": "scripts.html"},
-          "admin": {"template": "adminMenu.html"},
-          "primary": {"template": "primaryMenu.html"},
-          "header": {"template": "header.html","cache":true,"varyParams":false},
-          "messages": {"template": "messages.html"},
-          "body": {"template": "body.html"},
-          "right": {"template": "right.html"},
-          "footer": {"template": "footer.html","cache":true,"varyParams":false}
+    "name":"calipso",
+    "type":"full",
+    "description":"Theme used on Calip.so",
+    "version":"0.2.4",
+    "author":"Clifton Cunningham <clifton.cunningham@gmail.com> (cliftoncunningham.co.uk)",
+    "layouts":{
+        "default":{
+            "layout":{
+                "template":"default.html",
+                "sections":{
+                    "styles":{
+                        "template":"styles.html",
+                        "cache":true,
+                        "varyParams":false
+                    },
+                    "scripts":{
+                        "template":"scripts.html"
+                    },
+                    "admin":{
+                        "template":"adminMenu.html"
+                    },
+                    "primary":{
+                        "template":"primaryMenu.html"
+                    },
+                    "header":{
+                        "template":"header.html",
+                        "cache":true,
+                        "varyParams":false
+                    },
+                    "messages":{
+                        "template":"messages.html"
+                    },
+                    "body":{
+                        "template":"body.html"
+                    },
+                    "right":{
+                        "template":"right.html"
+                    },
+                    "footer":{
+                        "template":"footer.html",
+                        "cache":true,
+                        "varyParams":false
+                    }
+                },
+                "modules":{
+                    "user":{
+                        "login":"modules/user/login.html"
+                    },
+                    "elastic":{
+                        "results":"modules/elastic/results.html"
+                    }
+                }
+            }
         },
-        "modules":{
-          "user":{
-            "login":"modules/user/login.html"
-          },
-          "elastic":{
-            "results":"modules/elastic/results.html"
-          }
+        "home":{
+            "layout":{
+                "template":"default.html",
+                "copyFrom":"default",
+                "sections":{
+                    "body":{
+                        "template":"body.html",
+                        "cache":true,
+                        "varyParams":false
+                    }
+                }
+            }
+        },
+        "guideLanding":{
+            "layout":{
+                "template":"default.html",
+                "copyFrom":"default",
+                "sections":{
+                    "body":{
+                        "template":"body.html",
+                        "cache":true,
+                        "varyParams":true
+                    }
+                }
+            }
+        },
+        "blogLanding":{
+            "layout":{
+                "template":"default.html",
+                "copyFrom":"default",
+                "sections":{
+                    "body":{
+                        "template":"body.html",
+                        "cache":true,
+                        "varyParams":true
+                    }
+                }
+            }
+        },
+        "tagLanding":{
+            "layout":{
+                "template":"default.html",
+                "copyFrom":"default",
+                "sections":{
+                    "body":{
+                        "template":"body.html",
+                        "cache":true,
+                        "varyParams":true
+                    }
+                }
+            }
+        },
+        "githubLanding":{
+            "layout":{
+                "template":"default.html",
+                "copyFrom":"default",
+                "sections":{
+                    "body":{
+                        "template":"body.html",
+                        "cache":true,
+                        "varyParams":true
+                    }
+                }
+            }
+        },
+        "quickstartLanding":{
+            "layout":{
+                "template":"default.html",
+                "copyFrom":"default",
+                "sections":{
+                    "body":{
+                        "template":"body.html",
+                        "cache":true,
+                        "varyParams":true
+                    }
+                }
+            }
+        },
+        "preview":{
+            "layout":{
+                "template":"preview.html",
+                "copyFrom":"default"
+            }
         }
-      }
-    },
-    "home": {
-      "layout": {
-        "template": "default.html",
-        "copyFrom":"default",
-        "sections": {
-          "body": {"template": "body.html","cache":true,"varyParams":false}
-        }
-      }
-    },
-    "guideLanding": {
-      "layout": {
-        "template": "default.html",
-        "copyFrom":"default",
-        "sections": {
-          "body": {"template": "body.html","cache":true,"varyParams":true}
-        }
-      }
-    },
-    "blogLanding": {
-      "layout": {
-        "template": "default.html",
-        "copyFrom":"default",
-        "sections": {
-          "body": {"template": "body.html","cache":true,"varyParams":true}
-        }
-      }
-    },
-    "tagLanding": {
-      "layout": {
-        "template": "default.html",
-        "copyFrom":"default",
-        "sections": {
-          "body": {"template": "body.html","cache":true,"varyParams":true}
-        }
-      }
-    },
-    "githubLanding": {
-      "layout": {
-        "template": "default.html",
-        "copyFrom":"default",
-        "sections": {
-          "body": {"template": "body.html","cache":true,"varyParams":true}
-        }
-      }
-    },
-    "quickstartLanding": {
-      "layout": {
-        "template": "default.html",
-        "copyFrom":"default",
-        "sections": {
-          "body": {"template": "body.html","cache":true,"varyParams":true}
-        }
-      }
-    },
-    "preview": {
-      "layout": {        
-        "template": "preview.html",
-        "copyFrom":"default"
-      }
     }
-  }
 }
