@@ -2,7 +2,12 @@
  * Additional content section / block functions for body.
  */
 
-var rootpath = process.cwd() + '/', path = require('path'), calipso = require(path.join(rootpath, 'lib/calipso')), Query = calipso.lib.mongoose.Query;
+var rootpath = process.cwd() + '/',
+  path = require('path'),
+  calipso = require(path.join(rootpath, 'lib/calipso'));
+if (calipso.wrapRequire) { require = calipso.wrapRequire(module); }
+
+var Query = calipso.lib.mongoose.Query;
 
 exports = module.exports = function (req, options, callback) {
 

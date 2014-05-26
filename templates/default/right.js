@@ -2,7 +2,10 @@
  * Additional content section / block functions for body.
  */
 
-var rootpath = process.cwd() + '/', path = require('path'), calipso = require(path.join(rootpath, 'lib/calipso'));
+var rootpath = process.cwd() + '/',
+  path = require('path'),
+  calipso = require(path.join(rootpath, 'lib/calipso'));
+if (calipso.wrapRequire) { require = calipso.wrapRequire(module); }
 
 exports = module.exports = function (req, options, callback) {
 
