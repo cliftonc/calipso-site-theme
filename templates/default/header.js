@@ -2,7 +2,7 @@
  * Additional content section / block functions for body.
  */
 
-vvar rootpath = process.cwd() + '/',
+var rootpath = process.cwd() + '/',
 	path = require('path'),
 	calipso = require(path.join(rootpath, 'lib/calipso'));
 if (calipso.wrapRequire) { require = calipso.wrapRequire(module); }
